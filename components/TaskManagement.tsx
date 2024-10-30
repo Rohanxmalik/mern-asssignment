@@ -59,7 +59,7 @@ const TaskManagement = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4 flex-1">
+    <div className="max-w-md py-4 flex-1">
       {/* Tasks Today Section */}
       <div className="my-4 h-full">
         <div className="flex justify-between items-center mb-4">
@@ -70,7 +70,7 @@ const TaskManagement = () => {
         {/* Task List */}
         <div className="space-y-3">
           {tasks.map((task) => (
-            <div key={task.id} className="flex items-center gap-3">
+            <div key={task.id} className="flex items-center gap-3 py-3">
               <input
                 type="checkbox"
                 checked={task.completed}
